@@ -1,9 +1,15 @@
 [package]
-name = "rust-template"
+name = "unique_callout"
 version = "0.1.0"
-authors = ["Alejandro Martinez Ruiz <alex@flawedcode.org>"]
+description = "Making callouts from proxy-wasm extensions unique."
+authors = ["Rahul Anand <rahulanand16nov@gmail.com>"]
+repository = "https://github.com/3scale-rs/proxy-wasm-unique-callout"
+readme = "README.md"
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+proxy-wasm = "0.1"
+bincode = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+log = "0.4"
